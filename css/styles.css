@@ -31,10 +31,15 @@ body{
 ul {
     list-style: none;
 }
+img{
+    display: block;
+}
 .container{
     width: 100%;
-    max-width: 1440px;
-    margin: auto;
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .visually_hidden {
     position: absolute;
@@ -60,6 +65,9 @@ ul {
 .header_line{
 border-bottom: var(--primaryColorCloud) solid 1px;
 }
+h1, h3, h4, h5, p{
+    margin: 0;
+}
 h2{
     font-weight: 600;
     font-size: 36px;
@@ -67,6 +75,7 @@ h2{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin: 0;
 }
 
 
@@ -116,6 +125,8 @@ h2{
         text-decoration: none;
         margin-right: 46px;
         display: inline;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 .nav_main:last-child{
     margin-right: 0;
@@ -131,7 +142,6 @@ h2{
     color: var(--primaryColorIris);
 }
 .menu_nav{
-    padding-right: 46px;
     display: inline;
 }
 .contact{
@@ -144,10 +154,11 @@ h2{
         color: var(--primaryColorSlate);
         text-decoration: none;
         display: inline;
-        margin-right: 40px;
-
-
-
+        padding-top: 24px;
+        padding-bottom: 24px;
+}
+.mail{
+    margin-right: 40px;
 }
 .contact_item:hover{
     color: var(--primaryColorIris);
@@ -163,7 +174,7 @@ h2{
 }
 .hero_content{
     text-align: center;
-    width: 500px;
+    width: 520px;
 }
 .hero_title{
     font-weight: 600;
@@ -182,7 +193,7 @@ h2{
     margin-top: 46px;
     display: flex;
     flex-direction: row;
-    padding: 15px 25px;
+    padding: 15px 29px;
     gap: 10px;
     margin: 48px auto;
 }
@@ -212,12 +223,18 @@ h2{
 .benefits{
     padding-top: 120px;
     padding-bottom: 120px;
-    margin-left: 156px;
 }
 .benefit_item{
-    max-width: 264px;
+    width: 264px;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 24px;
+}
+.benefit_item:last-child{
+    margin-right: 0;
+}
+.benefits_list{
+    display: flex;
+    flex-wrap: wrap;
 }
 .title_benefits{
         font-weight: 600;
@@ -249,15 +266,17 @@ h2{
 }
 .service_item{
     display: inline-block;
-    margin-right: 24px;
+    margin-right: 13px;
 }
-.pics_of_service{
-    
+.service_item:last-child{
+    margin-right: 0;
+}
+.pics_of_service{ 
     box-sizing: border-box;
-        background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1));
-        background-blend-mode: soft-light, normal;
-        border: 1px solid var(--primaryColorCornflower);
-
+    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1));
+    background-blend-mode: soft-light, normal;
+    border: 1px solid var(--primaryColorCornflower);
+    display: block;
         
 }
 
@@ -266,7 +285,6 @@ h2{
         background: var(--primaryColorCloud);
         text-align: center;
         padding-top: 120px;
-        padding-bottom: 120px;
         margin-bottom: 0px;
 }
 .team_title {
@@ -286,9 +304,15 @@ h2{
         border-radius: 0px 0px 4px 4px;
         max-width: 264px;
         display: inline-block;
-        margin-right: 24px;
+        margin-right: 19px;
 }
-
+.team_cards:last-child{
+    margin-right: 0;
+}
+.team_card_text{
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
 .team_cards_header{
     font-weight: 600;
     font-size: 20px;
@@ -297,7 +321,6 @@ h2{
     letter-spacing: 0.02em;
     color: var(--primaryColorNavyBlue);
     margin-bottom: 8px;
-    margin-top: 32px;
 }
 
 .team_cards_description {
@@ -306,7 +329,7 @@ h2{
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--primaryColorSlate);
-        margin-bottom: 32px;
+        
 }
 
 
@@ -343,22 +366,25 @@ h2{
 }
 .btn_list{
     margin: auto;
-    width: 580px;
-    padding: 94px 0 50px 0;
+    margin: 96px 0 72px 0;
 }
 .btn_ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.btn_item{
+    margin-right: 24px;
+}
+.btn_item:last-child{
+    margin: 0;
 }
 
 .project_list {
-    padding-bottom: 120px;
-    margin-left: 156px;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 24px;
-    column-gap: 48px;
+    gap: 24px;
+
 }
 
 .cards_link{
@@ -373,6 +399,11 @@ h2{
     width: 360px;
     
 }
+.card_text{
+    padding-left: 16px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
 .project_title{
     font-weight: 600;
     font-size: 20px;
@@ -380,12 +411,6 @@ h2{
     letter-spacing: 0.02em;
     display: flex;
     padding-bottom: 8px;
-    padding-left: 16px;
-    padding-top: 32px;
-}
-.project_text{
-    padding-left: 16px;
-    padding-bottom: 32px;
 }
 
 /* FOOTER */
@@ -393,7 +418,6 @@ h2{
     background: var(--primaryColorNavyBlue);
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
 }
 
 .logo_footer {
