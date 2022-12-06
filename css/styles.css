@@ -38,8 +38,7 @@ img{
     width: 100%;
     width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 .visually_hidden {
     position: absolute;
@@ -53,6 +52,14 @@ img{
 }
 .section {
     padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section_portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .header{
     justify-content: space-between;
@@ -221,7 +228,6 @@ h2{
 /* BENEFITS */
 .benefits{
     padding-top: 120px;
-    padding-bottom: 120px;
 }
 .benefit_item{
     width: 264px;
@@ -246,7 +252,7 @@ h2{
 .txt_benefits{
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.015em;
     color: var(--primaryColorSlate);
 }
 
@@ -309,8 +315,8 @@ h2{
     margin-right: 0;
 }
 .team_card_text{
-    margin-bottom: 32px;
-    margin-top: 32px;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 .team_cards_header{
     font-weight: 600;
@@ -366,7 +372,6 @@ h2{
 .btn_ul{
     display: flex;
     justify-content: center;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 .btn_item{
